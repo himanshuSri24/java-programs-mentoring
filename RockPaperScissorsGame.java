@@ -12,7 +12,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class GuessTheNumber {
+public class RockPaperScissorsGame {
 
     static String name;
     
