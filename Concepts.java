@@ -53,10 +53,10 @@ class Concepts extends Super {
 }
 
 /*
- * Abstract classes
- * Interfaces
- * Multiple inheritance in java ( using interfaces )
- * Enhanced for loop
- * Access specifiers ( public, private, protected, default)
- * Destructors
+ * Abstract classes [x]
+ * Interfaces [x]
+ * Multiple inheritance in java ( using interfaces ) [x]
+ * Enhanced for loop [x]
+ * Access specifiers ( public, private, protected, default ) [x]
+ * Destructors [x]
  */
