@@ -18,3 +18,9 @@ public class FileInput {
         }
     }
 }
+
+/*
+ * When we use .read() in streams, it will read one character at a time
+ * once the file is over, it will just return -1
+ * 
+ */
