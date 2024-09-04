@@ -85,11 +85,50 @@ public class StringBuilderAndBuffer {
         }
     }
 
+    static String reverse(String s) {
+        String rev = "";
+        for (int i = s.length() - 1; i >= 0; i--) {
+            rev += s.charAt(i);
+        }
+        return rev;
+    }
+
+    static void p3() {
+        String s = "ram is good";
+        String words[] = s.split("\s+");
+        String reversedString = "";
+        for (int i = 0; i < words.length; i++) {
+            reversedString += reverse(words[i]) + " ";
+        }
+        System.out.println(reversedString);
+    }
+
+    static void p3Version2() {
+        String s = "ram is    good";
+        s = s.trim() + " ";
+        String reversedString = "";
+        String w = "";
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (ch == ' ' && s.charAt(i - 1) != ' ') {
+                reversedString += reverse(w) + " ";
+                w = "";
+            } else if (ch != ' ') {
+                w += ch;
+            } else if (ch == ' ') {
+                reversedString += ch;
+            }
+        }
+        System.out.println(reversedString);
+    }
+
     public static void main(String[] args) {
         // p1String();
         // p1();
-        p2String2();
-        p2();
+        // p2String2();
+        // p2();
+        // p3();
+        p3Version2();
     }
 }
 
