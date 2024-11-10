@@ -1,17 +1,22 @@
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 public class BufferedInputProg {
     public static void main(String[] args) {
         try {
-            FileInputStream fileObj = new FileInputStream("TestProgram.java");
-            BufferedInputStream obj = new BufferedInputStream(fileObj);
+            FileReader fileObj = new FileReader("TestFile.txt");
+            BufferedReader obj = new BufferedReader(fileObj);
 
             System.out.println("File contents : ");
-            int x;
-            while ((x = obj.read()) != -1) {
-                System.out.print((char) x);
+            String x;
+            while ((x = obj.readLine()) != null) {
+                String arr[] = x.split(" ");
+                System.out.println(Arrays.toString(arr));
+                // System.out.println(x);
             }
 
             obj.close();

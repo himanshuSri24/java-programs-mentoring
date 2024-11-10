@@ -1,1 +1,4 @@
-this is my new text, this is the one I want to put in the file
+Apples Fruits 150 0.5
+Bananas Fruits 200 0.3
+Shampoo PersonalCare 50 3.2
+Toothpaste PersonalCare 100 1.5
